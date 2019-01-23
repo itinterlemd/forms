@@ -4,7 +4,7 @@ import {AppTopbar} from './AppTopbar';
 import {AppFooter} from './AppFooter';
 import {AppMenu} from './AppMenu';
 import {AppInlineProfile} from './AppInlineProfile';
-import {Route, withRouter} from 'react-router-dom';
+import {Route, withRouter, Redirect} from 'react-router-dom';
 import {Dashboard} from './components/Dashboard';
 import {Contacto} from './components/Contacto';
 import {PanelsDemo} from './components/PanelsDemo';
@@ -165,12 +165,15 @@ class App extends Component {
                     </ScrollPanel>
                 </div>
 
-                <div className="layout-main">
+                <div className="layout-main">                
 				
-                    <Route path="/" exact component={Dashboard} />
+                    <Route path="/dashboard" component={Dashboard} />
                     <Route path="/contactos" component={Contacto} showToggleMenu="false"/>
                     <Route path="/panels" component={PanelsDemo} />
                     <Route path="/messages" component={MessagesDemo} />
+                    <Route  path="/" exact > 
+                        <Redirect to="/contactos"/>
+                    </Route>
                 </div>
 
                 <AppFooter />

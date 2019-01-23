@@ -183,11 +183,15 @@ export class Contacto extends Component {
                     
                 </div>
                 <div className="p-g-12 " style={{textAlign:'center'}}>
-                <Messages ref={(el) => this.messages = el} />
-             <Button label="Solicitar Información" style={{marginBottom:'10px'}} disabled={isDisabled}
-             className="p-button-info p-button-raised" onClick={this.handleSubmit}/>
-              
-</div>
+                    <Messages ref={(el) => this.messages = el} />
+                    <Button label="Solicitar Información" style={{marginBottom:'10px'}} disabled={isDisabled}
+                    className="p-button-info p-button-raised" onClick={this.handleSubmit}/>
+                </div>
+                <div className="p-g-12"> 
+                Al hacer clic en «Solicitar Información», aceptas las Condiciones de uso y Política de Tratamiento y Protección de Datos Personales. 
+                <a href="https://itinterlemd.github.io/pages/terminos" target="_blank" rel="noopener noreferrer">Ver aquí</a>
+
+                </div>
 
                  </div>
         );

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const urlBase = "http://127.0.0.1:5000/api/v1";
+const urlBase = "https://campus-itli.herokuapp.com/api/v1";
 
 export class RegisterService {
     
@@ -35,22 +35,5 @@ export class RegisterService {
                 }).catch(function (object) {                    
                     return object.response.data;
                 }); 
-    }
-
-    getRecursosLabels(label, onComplete, onError) {
-        const  url = urlBase+"/resource/?labels__contains="+label;
-     return  axios.get(url)
-     .then(onComplete ? onComplete : res => res.data.objects)
-    .catch(onError ? onError : (error) => console.log(error));
-    }
-
-    getPhasesRecurso(resource, onComplete, onError) {
-        const  url = urlBase+"/phase/?resources="+resource;
-        console.log("url-->"+url)
-     return  axios.get(url)
-     .then(onComplete ? onComplete : res => res.data.objects)
-    .catch(onError ? onError : (error) => console.log(error));
-    }
-    
-  
+    }  
 }
