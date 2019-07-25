@@ -23,19 +23,30 @@ export class ListContactos extends Component {
                 {label: 'Nombre Z-A', value: '!nombre'},
                 {label: 'Nombre A-Z', value: 'nombre'},
                 {label: 'Teléfono', value: 'numTelefono'}
-            ]
+            ],
+            first: 0,
+            rows: 4,
+            totalRecords: 0,
+            pagesTouched: []
         };
         this.dataViewItemTemplate = this.dataViewItemTemplate.bind(this);
         this.onSortChange = this.onSortChange.bind(this);
         this.onInputSearch = this.onInputSearch.bind(this);
         this.onSearch = this.onSearch.bind(this);
+        this.onPage = this.onPage.bind(this);
     }
 
     componentDidMount() {
-        contactoSerivice.getListContatos(0,20).then(response => {
+       this.init();
+    }
+    init=()=>{
+        contactoSerivice.getListContatos(0,this.state.rows).then(response => {
             if(!response.error){
-                        
-                this.setState({dataViewValue: response.data})
+                this.setState({    pagesTouched:[]});     
+                this.setState({
+                    dataViewValue: response.data,
+                    totalRecords:response.totalElements,
+                    pagesTouched:this.state.pagesTouched.concat(0)})
                 }else{
                     this.messages.show({life: 7000,closable:false,severity: 'error', detail:response.message});
                 }
@@ -111,27 +122,71 @@ export class ListContactos extends Component {
        jsonSearch.numTelefonoNombre=event.target.value;
 
        
-       this.setState({ valueSarch:event.target.value,isDisabledSearch:event.target.value==='',jsonSearch});
+       this.setState({ 
+           valueSarch:event.target.value,
+           isDisabledSearch:event.target.value==='',
+           jsonSearch           
+        });
 
-       //jsonSearch.numTelefonoNombre:null},
-
-      //  this.setState({ dataViewValue:filter});
+        if(event.target.value===''){
+            this.init();
+        }
     }
     onSearch(event) {
         if(!this.state.valueSarch || this.state.valueSarch===''){
             return;
         }
         
-        contactoSerivice.getListContatos(0,100,this.state.jsonSearch).then(response => {
+        contactoSerivice.getListContatos(0,this.state.rows,this.state.jsonSearch).then(response => {
             if(!response.error){
-                        
-                this.setState({dataViewValue: response.data})
+
+                this.setState({pagesTouched:[]});   
+                this.setState({
+                    dataViewValue: response.data,
+                    first: 0,
+                    totalRecords:response.totalElements,
+                    pagesTouched:this.state.pagesTouched.concat(0)
+                })
                 }else{
                     this.messages.show({life: 7000,closable:false,severity: 'error', detail:response.message});
                 }
            
             
         });
+
+        this.setState({
+            isDisabledSearch:true
+         });
+    }
+    onPage(event) {
+       
+        const page = Math.abs(event.first/this.state.rows);
+        const startIndex = event.first
+       // const isTouched=this.state.pagesTouched.find(p => p === page);
+       const isTouched=this.state.pagesTouched.indexOf(page)
+        if(isTouched <0){
+
+            contactoSerivice.getListContatos(page,this.state.rows,this.state.jsonSearch).then(response => {
+                if(!response.error){
+                 this.setState({
+                        first: startIndex,
+                        dataViewValue: this.state.dataViewValue.concat(response.data),
+                        totalRecords:response.totalElements,
+                        pagesTouched:this.state.pagesTouched.concat(page)
+                    });
+                    }else{
+                        this.messages.show({life: 7000,closable:false,severity: 'error', detail:response.message});
+                    }
+            
+                
+            });
+    }else{
+
+        this.setState({
+            first: startIndex
+        });
+    }
+
     }
     render() {
 
@@ -162,8 +217,14 @@ export class ListContactos extends Component {
             <div className="p-col-12">
             <div className="card card-w-title">
                 <h1>Datos de Contactos</h1>
-                <DataView ref={el => this.dv = el} value={this.state.dataViewValue} filterBy="nombre" itemTemplate={this.dataViewItemTemplate} layout={this.state.layout}
-                          paginatorPosition={'both'} paginator={true} rows={8} header={header} sortOrder={this.state.sortOrder} sortField={this.state.sortField}/>
+                <DataView ref={el => this.dv = el} value={this.state.dataViewValue} filterBy="nombre" 
+                    itemTemplate={this.dataViewItemTemplate} layout={this.state.layout}
+                    paginatorPosition={'both'} paginator={true}  header={header} 
+                    sortOrder={this.state.sortOrder} sortField={this.state.sortField}
+                    rows={this.state.rows}
+                    totalRecords={this.state.totalRecords}
+                    lazy={true} first={this.state.first} onPage={this.onPage} 
+                    />
             </div>
         </div>
         </div>

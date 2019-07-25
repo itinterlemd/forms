@@ -17,6 +17,7 @@ function getListContatos(page,size,filter) {
         return   axios.get(URL, axiosAuthOptions()).then(function(response) {
                         responseTO.error=false;
                         responseTO.data=response.data.content;
+                        responseTO.totalElements=response.data.totalElements;
                         //const { headers, json } = response;
                         return responseTO;                        
            }       
