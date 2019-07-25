@@ -30,9 +30,9 @@
     "simple-react-validator": "^1.2.0"
   },
   "devDependencies": {
+    "axios": ">=0.19.0",
     "gh-pages": "^2.0.1",
-    "react-scripts": "1.1.4",
-    "axios": ">=0.19.0"
+    "react-scripts": "1.1.4"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/layout/ -o src/layout/ | node-sass-chokidar public/assets/layout/ -o public/assets/layout/",
@@ -42,7 +42,9 @@
     "build-js": "react-scripts build && cp build/index.html build/404.html",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test  --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "PUBLIC_URL=https://itinterlemd.github.io/forms npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
