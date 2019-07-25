@@ -1,5 +1,9 @@
-/* Place your extensions here to make migration to a new release easier. */
-
 .layout-wrapper .layout-main {
-    padding: 60px 1px 1px 1px;
+  padding: 60px 1px 1px 1px;
+}
+
+.card-text-bold{
+  margin-bottom: .5em;
+  margin-top: -.25em;
+  font-weight: bold;
 }

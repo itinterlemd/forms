@@ -116,7 +116,7 @@ a {
       -moz-animation-duration: .5s;
       -webkit-animation-duration: .5s;
       animation-duration: .5s; }
-      .layout-wrapper .layout-topbar .layout-topbar-icons a {
+      .layout-wrapper .layout-topbar .layout-topbar-icons button {
         position: relative;
         color: #ffffff;
         margin-left: 20px;
@@ -126,14 +126,14 @@ a {
         -o-transition: color 0.2s;
         -webkit-transition: color 0.2s;
         transition: color 0.2s; }
-        .layout-wrapper .layout-topbar .layout-topbar-icons a:hover {
+        .layout-wrapper .layout-topbar .layout-topbar-icons button:hover {
           color: #77c7ff; }
-        .layout-wrapper .layout-topbar .layout-topbar-icons a span.layout-topbar-icon {
+        .layout-wrapper .layout-topbar .layout-topbar-icons button span.layout-topbar-icon {
           font-size: 2em; }
-        .layout-wrapper .layout-topbar .layout-topbar-icons a span.layout-topbar-item-text {
+        .layout-wrapper .layout-topbar .layout-topbar-icons button span.layout-topbar-item-text {
           font-size: 20px;
           display: none; }
-        .layout-wrapper .layout-topbar .layout-topbar-icons a span.layout-topbar-badge {
+        .layout-wrapper .layout-topbar .layout-topbar-icons button span.layout-topbar-badge {
           position: absolute;
           font-size: 10px;
           right: -5px;
@@ -226,7 +226,7 @@ a {
         font-size: 2em; }
       .layout-wrapper .layout-topbar .layout-menu-button:hover {
         color: #77c7ff; }
-    .layout-wrapper .layout-topbar a {
+    .layout-wrapper .layout-topbar button {
       cursor: pointer; }
   .layout-wrapper .p-scrollpanel {
     background: transparent;
@@ -295,7 +295,8 @@ a {
         transition: color 0.2s; }
         .layout-wrapper .layout-sidebar .profile .profile-link i {
           display: inline-block;
-          font-size: 16px; }
+          font-size: 16px;
+          vertical-align: middle; }
         .layout-wrapper .layout-sidebar .profile .profile-link:hover {
           color: #0388e5; }
       .layout-wrapper .layout-sidebar .profile > ul {
@@ -313,9 +314,19 @@ a {
         transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }
         .layout-wrapper .layout-sidebar .profile > ul.profile-expanded {
           max-height: 500px; }
-        .layout-wrapper .layout-sidebar .profile > ul li a {
-          border: 0 none; }
-        .layout-wrapper .layout-sidebar .profile > ul li:last-child > a {
+        .layout-wrapper .layout-sidebar .profile > ul li button {
+          width: 100%;
+          padding: 1em 15px 1em 1em;
+          border: 0 none;
+          border-radius: 0; }
+          .layout-wrapper .layout-sidebar .profile > ul li button:hover {
+            color: #0388e5; }
+          .layout-wrapper .layout-sidebar .profile > ul li button span {
+            margin-left: .25em;
+            vertical-align: middle; }
+          .layout-wrapper .layout-sidebar .profile > ul li button i {
+            vertical-align: middle; }
+        .layout-wrapper .layout-sidebar .profile > ul li:last-child > button {
           border: 0 none; }
     .layout-wrapper .layout-sidebar ul {
       list-style-type: none;
@@ -340,6 +351,11 @@ a {
           float: right; }
         .layout-wrapper .layout-sidebar ul li a:hover {
           color: #0388e5; }
+        .layout-wrapper .layout-sidebar ul li a.active-route {
+          background-color: #ffffff;
+          color: #0388e5; }
+          .layout-wrapper .layout-sidebar ul li a.active-route .menuitem-toggle-icon:before {
+            content: ""; }
       .layout-wrapper .layout-sidebar ul li.active-menuitem > a {
         background-color: #ffffff;
         color: #0388e5; }
@@ -407,18 +423,25 @@ a {
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
       /* IE6-9 */ }
-      .layout-wrapper .layout-sidebar.layout-sidebar-dark .profile > a {
+      .layout-wrapper .layout-sidebar.layout-sidebar-dark .profile > button {
         color: #ffffff; }
-        .layout-wrapper .layout-sidebar.layout-sidebar-dark .profile > a:hover {
+        .layout-wrapper .layout-sidebar.layout-sidebar-dark .profile > button:hover {
           color: #0388e5; }
       .layout-wrapper .layout-sidebar.layout-sidebar-dark .profile > ul {
         background-color: #2e3035; }
-        .layout-wrapper .layout-sidebar.layout-sidebar-dark .profile > ul li a {
-          border: 0 none; }
+        .layout-wrapper .layout-sidebar.layout-sidebar-dark .profile > ul li button {
+          border: 0 none;
+          color: #ffffff;
+          border-top: 1px solid rgba(52, 56, 65, 0.6); }
+          .layout-wrapper .layout-sidebar.layout-sidebar-dark .profile > ul li button:hover {
+            color: #0388e5; }
       .layout-wrapper .layout-sidebar.layout-sidebar-dark ul li a {
         color: #ffffff;
         border-top: 1px solid rgba(52, 56, 65, 0.6); }
         .layout-wrapper .layout-sidebar.layout-sidebar-dark ul li a:hover {
+          color: #0388e5; }
+        .layout-wrapper .layout-sidebar.layout-sidebar-dark ul li a.active-route {
+          background-color: #2e3035;
           color: #0388e5; }
       .layout-wrapper .layout-sidebar.layout-sidebar-dark ul li.active-menuitem > a {
         background-color: #2e3035;
@@ -616,7 +639,7 @@ h2 {
   margin: 0; }
   .dashboard .contacts ul li {
     border-bottom: 1px solid #e3e3e3; }
-    .dashboard .contacts ul li a {
+    .dashboard .contacts ul li button {
       padding: 9px;
       width: 100%;
       box-sizing: border-box;
@@ -630,18 +653,18 @@ h2 {
       -o-transition: background-color 0.2s;
       -webkit-transition: background-color 0.2s;
       transition: background-color 0.2s; }
-      .dashboard .contacts ul li a .name {
+      .dashboard .contacts ul li button .name {
         position: absolute;
         right: 10px;
         top: 10px;
         font-size: 18px; }
-      .dashboard .contacts ul li a .email {
+      .dashboard .contacts ul li button .email {
         position: absolute;
         right: 10px;
         top: 30px;
         font-size: 14px;
         color: #707070; }
-      .dashboard .contacts ul li a:hover {
+      .dashboard .contacts ul li button:hover {
         cursor: pointer;
         background-color: #eeeeee; }
     .dashboard .contacts ul li:last-child {
