@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   viewBox="0 0 100 100"
+   preserveAspectRatio="xMidYMid"
+   class="uil-ellipsis"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="logo-itli.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata24">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs22" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview20"
+     showgrid="false"
+     inkscape:zoom="12.625"
+     inkscape:cx="42.063534"
+     inkscape:cy="32"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18" />
+  <circle
+     cx="16"
+     cy="50"
+     r="15"
+     id="circle10"
+     style="fill:#00aa44"
+     fill="#0388e5"
+     transform="rotate(0 50 50)">
+    <animate
+       id="anir11"
+       attributeName="r"
+       from="0"
+       to="15"
+       begin="0s;anir14.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anir12"
+       attributeName="r"
+       from="15"
+       to="15"
+       begin="anir11.end"
+       dur="0.9375s"
+       fill="freeze" />
+    <animate
+       id="anir13"
+       attributeName="r"
+       from="15"
+       to="0"
+       begin="anir12.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anir14"
+       attributeName="r"
+       from="0"
+       to="0"
+       begin="anir13.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix11"
+       attributeName="cx"
+       from="16"
+       to="16"
+       begin="0s;anix18.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix12"
+       attributeName="cx"
+       from="16"
+       to="16"
+       begin="anix11.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix13"
+       attributeName="cx"
+       from="16"
+       to="50"
+       begin="anix12.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix14"
+       attributeName="cx"
+       from="50"
+       to="50"
+       begin="anix13.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix15"
+       attributeName="cx"
+       from="50"
+       to="84"
+       begin="anix14.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix16"
+       attributeName="cx"
+       from="84"
+       to="84"
+       begin="anix15.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix17"
+       attributeName="cx"
+       from="84"
+       to="84"
+       begin="anix16.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix18"
+       attributeName="cx"
+       from="84"
+       to="16"
+       begin="anix17.end"
+       dur="0.1875s"
+       fill="freeze" />
+  </circle>
+  <circle
+     cx="50"
+     cy="50"
+     r="15"
+     id="circle12"
+     fill="#ffffff"
+     transform="rotate(0 50 50)">
+    <animate
+       id="anir21"
+       attributeName="r"
+       from="15"
+       to="15"
+       begin="0s;anir25.end"
+       dur="0.75s"
+       fill="freeze" />
+    <animate
+       id="anir22"
+       attributeName="r"
+       from="15"
+       to="0"
+       begin="anir21.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anir23"
+       attributeName="r"
+       from="0"
+       to="0"
+       begin="anir22.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anir24"
+       attributeName="r"
+       from="0"
+       to="15"
+       begin="anir23.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anir25"
+       attributeName="r"
+       from="15"
+       to="15"
+       begin="anir24.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix21"
+       attributeName="cx"
+       from="16"
+       to="50"
+       begin="0s;anix28.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix22"
+       attributeName="cx"
+       from="50"
+       to="50"
+       begin="anix21.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix23"
+       attributeName="cx"
+       from="50"
+       to="84"
+       begin="anix22.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix24"
+       attributeName="cx"
+       from="84"
+       to="84"
+       begin="anix23.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix25"
+       attributeName="cx"
+       from="84"
+       to="84"
+       begin="anix24.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix26"
+       attributeName="cx"
+       from="84"
+       to="16"
+       begin="anix25.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix27"
+       attributeName="cx"
+       from="16"
+       to="16"
+       begin="anix26.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix28"
+       attributeName="cx"
+       from="16"
+       to="16"
+       begin="anix27.end"
+       dur="0.1875s"
+       fill="freeze" />
+  </circle>
+  <circle
+     cx="83.504951"
+     cy="48.019802"
+     r="15"
+     id="circle14"
+     style="fill:#00aa44;fill-opacity:1">
+    <animate
+       id="anir31"
+       attributeName="r"
+       from="15"
+       to="15"
+       begin="0s;anir35.end"
+       dur="0.375s"
+       fill="freeze" />
+    <animate
+       id="anir32"
+       attributeName="r"
+       from="15"
+       to="0"
+       begin="anir31.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anir33"
+       attributeName="r"
+       from="0"
+       to="0"
+       begin="anir32.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anir34"
+       attributeName="r"
+       from="0"
+       to="15"
+       begin="anir33.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anir35"
+       attributeName="r"
+       from="15"
+       to="15"
+       begin="anir34.end"
+       dur="0.5625s"
+       fill="freeze" />
+    <animate
+       id="anix31"
+       attributeName="cx"
+       from="50"
+       to="84"
+       begin="0s;anix38.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix32"
+       attributeName="cx"
+       from="84"
+       to="84"
+       begin="anix31.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix33"
+       attributeName="cx"
+       from="84"
+       to="84"
+       begin="anix32.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix34"
+       attributeName="cx"
+       from="84"
+       to="16"
+       begin="anix33.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix35"
+       attributeName="cx"
+       from="16"
+       to="16"
+       begin="anix34.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix36"
+       attributeName="cx"
+       from="16"
+       to="16"
+       begin="anix35.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix37"
+       attributeName="cx"
+       from="16"
+       to="50"
+       begin="anix36.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix38"
+       attributeName="cx"
+       from="50"
+       to="50"
+       begin="anix37.end"
+       dur="0.1875s"
+       fill="freeze" />
+  </circle>
+  <circle
+     cx="83.504951"
+     cy="48.019802"
+     r="15"
+     id="circle16"
+     style="fill:#ffffff">
+    <animate
+       id="anir41"
+       attributeName="r"
+       from="15"
+       to="0"
+       begin="0s;anir44.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anir42"
+       attributeName="r"
+       from="0"
+       to="0"
+       begin="anir41.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anir43"
+       attributeName="r"
+       from="0"
+       to="15"
+       begin="anir42.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anir44"
+       attributeName="r"
+       from="15"
+       to="15"
+       begin="anir43.end"
+       dur="0.9375s"
+       fill="freeze" />
+    <animate
+       id="anix41"
+       attributeName="cx"
+       from="84"
+       to="84"
+       begin="0s;anix48.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix42"
+       attributeName="cx"
+       from="84"
+       to="16"
+       begin="anix41.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix43"
+       attributeName="cx"
+       from="16"
+       to="16"
+       begin="anix42.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix44"
+       attributeName="cx"
+       from="16"
+       to="16"
+       begin="anix43.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix45"
+       attributeName="cx"
+       from="16"
+       to="50"
+       begin="anix44.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix46"
+       attributeName="cx"
+       from="50"
+       to="50"
+       begin="anix45.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix47"
+       attributeName="cx"
+       from="50"
+       to="84"
+       begin="anix46.end"
+       dur="0.1875s"
+       fill="freeze" />
+    <animate
+       id="anix48"
+       attributeName="cx"
+       from="84"
+       to="84"
+       begin="anix47.end"
+       dur="0.1875s"
+       fill="freeze" />
+  </circle>
+  <rect
+     style="fill:#80ff80;stroke-width:1.189973"
+     id="rect30"
+     width="19.801979"
+     height="17.450493"
+     x="6.3118811"
+     y="41.83168" />
+</svg>
